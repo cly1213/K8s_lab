@@ -9,7 +9,7 @@ Follow this guide
 
 ### Install a Hypervisor
 
-We will chose VirtualBox
+We will choose VirtualBox
 
 ### Install kubectl
 
@@ -33,4 +33,25 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 minikube version
+```
+
+## start
+```bash
+minikube start
+
+```
+
+## test
+$ kubectl get nodes
+
+## dashboard
+```bash
+$ minikube dashboard
+Opening kubernetes dashboard in default browser...
+```
+
+## Delete minikube
+
+```bash
+minikube delete && rm -rf ~/.minikube
 ```
