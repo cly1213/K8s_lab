@@ -48,7 +48,7 @@ kubectl get nodes
 
 ## dashboard
 ```bash
-$ minikube dashboard
+minikube dashboard
 ```
 
 ## Delete minikube
