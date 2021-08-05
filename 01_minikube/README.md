@@ -42,16 +42,16 @@ minikube start
 ```
 
 ## test
-$ kubectl get nodes
+```bash
+kubectl get nodes
+```
 
 ## dashboard
 ```bash
 $ minikube dashboard
-Opening kubernetes dashboard in default browser...
 ```
 
 ## Delete minikube
-
 ```bash
 minikube delete && rm -rf ~/.minikube
 ```

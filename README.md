@@ -1,4 +1,4 @@
-# K8s-lab
+# K8s-labs
 ## minikube
 https://github.com/kubernetes/minikube
 
