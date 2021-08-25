@@ -38,19 +38,24 @@ Docker utilizing the following mechanism
 	1. Docker-swarm
 	2. Kubernetes
 
-Ref:
+## Reference
 
 LXC v.s Docker
+
 https://www.upguard.com/articles/docker-vs-lxc
 
 PodMan v.s Docker
+
 https://developers.redhat.com/blog/2019/02/21/podman-and-buildah-for-docker-users/
 
 Kata Container v.s Docker
+
 https://superuser.openstack.org/articles/how-kata-containers-boost-security-in-docker-containers/
 
 CRI-O v.s Docker
+
 https://thenewstack.io/cri-o-project-run-containers-without-docker-reaches-1-0/
 
 Online learning
+
 https://katacoda.com
