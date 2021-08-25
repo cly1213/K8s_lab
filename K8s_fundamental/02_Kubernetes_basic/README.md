@@ -19,9 +19,9 @@ https://landscape.cncf.io/
 - Kubelet
 - Kube-proxy
 - Container-runtime
-    - CRI Implementation
 
-## K8s(Kubernetes) & CRI(Container Runtime Interface)
+## K8s - CRI(Container Runtime Interface)
+CRI Implementation
 
 ## K8s - CNI(Container Network Interface)
 CNI Implementation
