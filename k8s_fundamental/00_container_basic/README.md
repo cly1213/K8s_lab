@@ -1,8 +1,8 @@
 # Container
-- From docker
+From docker
 
 ## Rersistrnt volume
-- mount (-v)
+- $ mount (-v)
 
 ## Network
 - container to WAN
