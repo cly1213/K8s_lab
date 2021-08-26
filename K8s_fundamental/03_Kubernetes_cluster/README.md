@@ -1,11 +1,11 @@
 # Kubernetes cluster
-## Kubeadm
+- Kubeadm
 
-## Minikube
+- Minikube
 
-## KIND(Kubernetes in Docker)
+- KIND
 
-## Rancher
+- Rancher
 
-## Kubeconfig
+- Kubeconfig
 
