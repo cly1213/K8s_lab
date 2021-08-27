@@ -161,3 +161,53 @@ kube-system  ├─Pod/kube-proxy-b4976                     True           2m8s
 kube-system  └─Pod/kube-proxy-mrh2s                     True           2m8s
 
 ```
+
+### Deployment
+
+[note] frequently used(Recommand)
+
+- Rollout Update
+- Rollout Undo
+
+```
+kubectl rollout staths deployment test
+kubectl rollout undo deployment test
+```
+
+### DaemonSet
+
+### StatefulSet
+- network
+- storage
+
+rolling update
+
+```
+kubectl tree -n kube-system ds kube-proxy
+kubectl -n kube-system get ds
+```
+
+### Job/Conjob
+https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
+
+ - conjob: time based
+
+- mongodb (https://kubernetes.io/blog/2017/01/running-mongodb-on-kubernetes-with-statefulsets/)
+
+- rollback daemonset (https://kubernetes.io/docs/tasks/manage-daemon/rollback-daemon-set/)
+
+- ControllerRevision (https://github.com/kubernetes/api/blob/master/apps/v1/types.go#L791-L812)
+
+
+ ## Debug
+ - tools
+ - log
+    From Container
+    - /var/logs
+    - syslog
+    - systemd
+
+    From the system
+    - dmesg
+    - /var/log/
+    - kern.log
