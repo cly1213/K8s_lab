@@ -91,8 +91,10 @@ Use KIND
 To replicate more Pods
 
 ```
-$ cat basic.yaml
+$ kubectl apply -f basic.yaml
+replicaset.apps/test-rs created
 
+$ cat basic.yaml
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -135,9 +137,6 @@ echo 'export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"' >> ~/.bashrc
 
 ```
 $ kubectl krew install tree
-
-$ kubectl apply -f basic.yaml
-replicaset.apps/test-rs created
 
 $ kubectl tree rs test-rs
 NAMESPACE  NAME                 READY  REASON  AGE
