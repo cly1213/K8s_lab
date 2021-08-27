@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: client
-    image: hwchiu/netutils
+    image: busybox
   - name: www-server
     image: nginx
