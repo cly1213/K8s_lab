@@ -174,11 +174,11 @@ kubectl rollout staths deployment test
 kubectl rollout undo deployment test
 ```
 
-### DaemonSet
+### DaemonSet/StatefulSet
 
-### StatefulSet
-- network
-- storage
+statefulset frequently used in  
+  - network
+  - storage
 
 rolling update
 
@@ -190,7 +190,7 @@ kubectl -n kube-system get ds
 ### Job/Conjob
 https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
 
- - conjob: time based
+conjob: time based
 
 - mongodb (https://kubernetes.io/blog/2017/01/running-mongodb-on-kubernetes-with-statefulsets/)
 
@@ -202,6 +202,7 @@ https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion
  ## Debug
  - tools
  - log
+
     From Container
     - /var/logs
     - syslog
