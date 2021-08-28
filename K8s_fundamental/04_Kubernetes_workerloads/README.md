@@ -31,21 +31,21 @@ Ref:
 - https://kubernetes.io/docs/reference/kubectl/cheatsheet/#editing-resources
 
 
-### Kubectl Deployment Strategies - Imperative Object
-- https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/
+### Kubectl Deployment Strategies 
+- Imperative Object
+    
+    https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/
 
+- Declarative Object
+    
+    https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
 
-### Kubectl Deployment Strategies - Declarative Object
-
-- https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
-
-- https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#declarative-object-configuration
+    https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#declarative-object-configuration
 
 #### Declarative
 Use Kubeadm
 
 [note] frequently used
-
 
 ```
 apply
@@ -80,7 +80,6 @@ kubectl get pods
 
 # select container
 kubectl exec -it two-container -c www-server bash
-
 ```
 
 ### ReplicaSet
@@ -114,7 +113,6 @@ spec:
       containers:
       - name: nginx-server
         image: nginx
-
 ```
 
 ### Kubectl Plugin - Tree
@@ -159,7 +157,6 @@ kube-system  ├─ControllerRevision/kube-proxy-68bd87b66  -              2m30s
 kube-system  ├─Pod/kube-proxy-6mcp8                     True           2m30s
 kube-system  ├─Pod/kube-proxy-b4976                     True           2m8s
 kube-system  └─Pod/kube-proxy-mrh2s                     True           2m8s
-
 ```
 
 ### Deployment
