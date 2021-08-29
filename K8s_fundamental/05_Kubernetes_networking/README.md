@@ -1,4 +1,4 @@
-## Network Functions
+# Network Functions
 https://kubernetes.io/docs/concepts/services-networking/
 
 Network Connectivity
@@ -10,7 +10,7 @@ Network Connectivity
     - Layer 4: TCP/UDP/STCP
     - Layer 7: HTTP/gRPC
 
-### Flannel & CNI
+## Flannel & CNI
 
 https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
@@ -18,7 +18,7 @@ https://github.com/GoogleCloudPlatform/container-engine-accelerators/blob/master
 
 - DaemonSet -> each node
 
-### IPAM (IP Management)
+## IPAM (IP Management)
 Pod to Pod
   - In same Node
     - Simple
@@ -54,7 +54,7 @@ Types
   - ExternalName
   - Headless
 
-#### ClusterIP
+## ClusterIP
   - client A: Outside the kubernetes node(VM)
   - client B: Inside the kubernetes node
 
@@ -91,10 +91,12 @@ kubectl exec ${client_pod} curl cluster-demo
 kubectl delete -R -f clusterIP/
 ```
 
-#### NodePort
+## NodePort
 Exposes the Service on each Node's IP at static port(the NodePort)
 
 Be able to contact NodePort Service, from outside the cluster
+
+[note] with CLUSTER-IP
 
 ```
 kindIP=$(docker inspect kind-worker  | jq '.[0].NetworkSettings.Networks.bridge.IPAddress' | tr -d '""')
@@ -124,7 +126,7 @@ sudo iptables -t nat -D DOCKER -d 172.17.8.111/32 ! -i docker0 -p tcp -m tcp --d
 <img src="https://github.com/cly1213/K8s_labs/blob/main/image/NodePort.png"/>
 
 
-#### Headless
+## Headless
 Do the load-balancing by yourself
 
 ```
@@ -180,6 +182,66 @@ Name:	hello-kubernetes-2.headless-demo.default.svc.cluster.local
 Address: 10.244.2.5
 ```
 
-#### Load Balancer/ExternalName
+## Load Balancer/ExternalName
 
-#### Ingress
+[note] with EXTERNAL-IP
+
+## Ingress
+https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+
+https://github.com/kubernetes/ingress-nginx
+
+Manages external access to the service in cluster
+  - Basiclly, HTTP(s)
+
+Provide different
+  - Load-balancing
+  - SSL terminatior
+  - Name-based virtual hosting
+
+Ingress Resource
+  - Ingress format defined by kubernetes
+
+Ingress-Controller(Third party)
+
+Ingress-Server(Third party)
+
+### Ingress solutions
+- NGINX
+- Traffic
+- HAProxy
+- Cloud Provider
+- ...
+
+## DNS
+https://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/
+
+```
+kubectl apply -R -f pod_dns/
+
+kubectl exec -it clusterfirst cat /etc/resolv.conf
+kubectl exec -it clusterfirst-true cat /etc/resolv.conf
+kubectl exec -it clusterfirstwithhost cat /etc/resolv.conf
+kubectl exec -it clusterfirstwithhost-true cat /etc/resolv.conf
+kubectl exec -it default cat /etc/resolv.conf
+kubectl exec -it none cat /etc/resolv.conf
+```
+
+## Networking Debug
+https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution
+
+
+Kubernetes Resource Error
+  - Yaml Error
+
+Network Error
+  - DNS Resolve Error
+  - No Route To Host
+  - Packet be dropped somewhere 
+
+CNI
+
+DNS
+
+Service
+
