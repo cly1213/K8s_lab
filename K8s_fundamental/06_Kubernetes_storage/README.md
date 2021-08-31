@@ -10,9 +10,9 @@ Mount outside volume
 deploy .yaml
 
 Key/Value
-    - Yaml
-    - json
-    - ...
+  - Yaml
+  - json
+  - ...
 
 Key -> file name
 Value -> data
@@ -52,13 +52,14 @@ https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/
 https://itnext.io/can-kubernetes-keep-a-secret-it-all-depends-what-tool-youre-using-498e5dee9c25
 
 Contains a small amount of sensitive data
-    - Password, token, key...
+  - Password, token, key...
 
 Two maps
-    - data
-        - Encode using base64
-        - echo -n "xxx" | base64
-    - string data
+  - data
+    - Encode using base64
+    - echo -n "xxx" | base64
+    
+  - string data
 
 
 ```
