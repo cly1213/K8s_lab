@@ -174,7 +174,8 @@ kubectl rollout undo deployment test
 ### DaemonSet/StatefulSet
 
 statefulset frequently used in  
-  - network
+  - network 
+    - like as DNS
   - storage
 
 rolling update
