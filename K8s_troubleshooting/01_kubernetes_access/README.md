@@ -16,3 +16,30 @@ kubectl config view
 kubectl config get-contexts
 vim ~/.kube/config
 ```
+
+## RBAC
+Role Based Access Control
+
+- Subject(Who)
+  - Developer/Process/Pod
+
+- Resources
+  - Pod/Deployment/PV/DaemonSet
+
+- Verbs
+  - list/get/create/watch/patch
+
+Role
+
+RoleBinding
+
+## Kubectl
+```
+
+```
+
+
+## K9s
+https://k9scli.io/
+
+
