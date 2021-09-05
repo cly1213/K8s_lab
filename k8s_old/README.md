@@ -7,11 +7,5 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-ku
 
 https://github.com/kubernetes/kubeadm
 
-## rke
-https://github.com/rancher/rke
-
-## helm
-https://helm.sh/
-
 ## kops
 https://github.com/kubernetes/kops
