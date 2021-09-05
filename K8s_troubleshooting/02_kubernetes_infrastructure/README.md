@@ -14,7 +14,8 @@ scheduler.conf
 controller-manager.conf
 ```
 ## Kubelet
-```bash
+
+```
 docker ps
 
 docker exec -it kind-worker2 bash
@@ -73,11 +74,11 @@ Userspace(slow)/iptables(default)/ipvs(kernel)
 
 See iptables
 
- ```bash
+```
 iptables-save
 
 iptables-save | wc
- ```
+```
 
 ### iptables
 Tools
@@ -100,7 +101,7 @@ Require kernel module
   - ip_vs_wrr
   - ip_vs_sh
 
-```bash
+```
 sudo kubeadm init --config kubeconfig.yaml
 
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
@@ -124,11 +125,11 @@ kubectl get nodes
 kubectl describe nodes
 ```
 
-node
+Node
 
 Initialize kubeadm
 
-```bash
+```
 sudo kubeadm init  --apiserver-advertise-address=172.17.8.123 --pod-network-cidr=10.244.0.0/16
 
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
@@ -139,6 +140,7 @@ kubectl taint nodes host1 node-role.kubernetes.io/master:NoSchedule-
 ```
 
 Join node (2ed VM)
+
 ```
 sudo hostnamectl set-hostname host1
 
@@ -149,7 +151,7 @@ sudo kubeadm reset
 
 Pod Max
 
-```bash
+```
 kubectl apply -f service.yaml
 
 kubectl describe pods ....
@@ -157,7 +159,7 @@ kubectl describe pods ....
 
 Disk full
 
-```bash
+```
 dd if=/dev/zero of=a bs=8k
 
 df -h
