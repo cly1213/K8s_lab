@@ -13,10 +13,7 @@ Container Runtime
     - GKS (Docker/Containerd)
 
 
-Install cri-o
-Install podman
-Install docker
-Install kubectl
+Install cri-o, podman, docker, kubectl
 
 ```
 sudo kubeadm init --config kubeconfig.yaml
@@ -46,3 +43,5 @@ ls /etc/kubernetes/manifests/
 
 kubectl get pods
 ```
+
+## Image
