@@ -15,6 +15,11 @@ $ aws --version
     - S3
     ...
 
+```
+$ aws configure
+```
+
+
 ```bash
 ## Create 
 $ kops create cluster --name=k8s.lychen.link --state=s3://kops.k8s.lychen.link --zones=us-west-1a --node-count=2 --node-size=t2.medium --master-size=t2.medium --dns-zone=k8s.lychen.link
@@ -27,6 +32,8 @@ $ kops update cluster --name k8s.lychen.link --yes --admin --state=s3://kops.k8s
 
 ```bash
 ## Validate
+$ kops validate cluster --state=s3://kops.k8s.lychen.link --wait 10m
+
 $ kops validate cluster --state=s3://kops.k8s.lychen.link
 Using cluster from kubectl context: k8s.lychen.link
 
