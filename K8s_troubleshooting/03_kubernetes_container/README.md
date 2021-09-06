@@ -1,4 +1,4 @@
-#
+# Container
 ## CRI
 Container Runtime
 
@@ -12,3 +12,37 @@ Container Runtime
     - EKS (Docker/Containerd)
     - GKS (Docker/Containerd)
 
+
+Install cri-o
+Install podman
+Install docker
+Install kubectl
+
+```
+sudo kubeadm init --config kubeconfig.yaml
+
+systemctl start cri-o
+
+sudo crictl ps
+
+ls /etc/cni/net.d
+
+sudo netstat -anlpt | grep 12345
+
+kubectl taint nodes k8s-dev node-role.kubernetes.io/master:NoSchedule-
+
+ps auxw | grep 13560
+
+sudo crictl pods
+
+sudo systemctl start cri-o
+
+sudo systemctl status cri-o
+
+sudo systemctl status kubectl
+
+## describe static pods info
+ls /etc/kubernetes/manifests/
+
+kubectl get pods
+```
