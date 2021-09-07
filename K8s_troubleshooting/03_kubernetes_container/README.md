@@ -45,3 +45,11 @@ kubectl get pods
 ```
 
 ## Image
+## Scheduling
+  - Taint & Tolerations
+
+  - NodeSelector
+
+  - Drain
+    - DeamonSet(Each node has)
+
