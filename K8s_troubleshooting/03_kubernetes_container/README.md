@@ -53,3 +53,13 @@ kubectl get pods
   - Drain
     - DeamonSet(Each node has)
 
+## Pod
+Phase
+  - Pending
+  - Running
+  - Succeeded
+  - Failed
+  - Unknown
+
+
+
