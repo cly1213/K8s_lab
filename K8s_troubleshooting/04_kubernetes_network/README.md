@@ -32,4 +32,9 @@ ps auxw | grep ...
 
  ## Ingress
  HTTP/HTTPS based routing
+
+ port 80: http
+ port 443: https
+
+ ## DNS
  
