@@ -23,3 +23,13 @@ docker exec -it kind-control-plane bash
 
 ps auxw | grep ...
 ```
+
+## Service/Ingress
+ - ClusterIP
+ - NodePort
+ - Load-Balancer
+ - Headless
+
+ ## Ingress
+ HTTP/HTTPS based routing
+ 
