@@ -82,4 +82,50 @@ spec:
 
 使用emptydir -> 相同pod裡的container使用共同的空間，若pod死掉資料也跟著清空 -> 注意使用
 
-## 
+## ConfigMap/Secret
+update configmap
+
+```
+kubectl get pods configmap-demo-745bdb7746-9zwvx -o json | jq '.metadata.uid'
+
+# 觀察 /var/lib/kubelet/pods/xxxxx 資料夾，看看這些 pod 裡面的資料長怎樣，包含 hosts, volumes, volumes-subpath
+
+# 可以用 watch 指令定期觀察
+``` 
+
+volume跟著ConfigMap走
+
+subpath跟著Container走，不會自動更新 -> 需要Pod重啟才會
+
+### Auto Reload
+https://github.com/stakater/Reloader
+
+```
+kubectl apply -f https://raw.githubusercontent.com/stakater/Reloader/master/deployments/kubernetes/reloader.yaml
+
+# 之後重新修改 configMap 並更新，可以觀察到有打入 Annotation 的 Deployment 會馬上被影響，相關的服務都會重起!
+
+# Rolling update!!!
+```
+
+## Local Volume
+### Hostpath
+Mount a file or directory from the host into your pod
+
+重啟後可以會換在不同node上
+
+Wait for first consumer -> 等待使用後在綁定pv
+
+### Local
+
+Deploy storageClass
+
+local-storage
+
+固定在特一node上:
+
+1. storageClass + hostpath
+
+2. local volume
+
+
