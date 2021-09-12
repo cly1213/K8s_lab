@@ -112,9 +112,9 @@ kubectl apply -f https://raw.githubusercontent.com/stakater/Reloader/master/depl
 ### Hostpath
 Mount a file or directory from the host into your pod
 
-重啟後可以會換在不同node上
+重啟後可能會換在不同node上
 
-Wait for first consumer -> 等待使用後在綁定pv
+Wait for first consumer -> 等待使用後再綁定pv
 
 ### Local
 
@@ -122,10 +122,12 @@ Deploy storageClass
 
 local-storage
 
-固定在特一node上:
+想要固定在特一node上:
 
 1. storageClass + hostpath
 
 2. local volume
+
+3. nodeSelector
 
 
