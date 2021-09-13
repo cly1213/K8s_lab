@@ -130,4 +130,27 @@ local-storage
 
 3. nodeSelector
 
+## Mounted Permission
 
+rwx
+
+Inherited the permission from the volume
+
+- runAsUser
+- runAsGroup
+- fsGroup
+
+### fsGroupChangePolicy
+ - Always
+ - OnRootMismatch
+
+https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#configure-volume-permission-and-ownership-change-policy-for-pods
+
+```
+/etc/group
+
+```
+
+
+## Debug Summary
+Issues
