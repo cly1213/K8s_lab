@@ -95,6 +95,11 @@ NOTES:
 
 ```
 
+```
+helm search repo stable
 
+helm install test --dry-run --set nginx.replicaCount=10 helm
+
+```
 
 
