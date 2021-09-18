@@ -102,4 +102,5 @@ helm install test --dry-run --set nginx.replicaCount=10 helm
 
 ```
 
+## Kustomize
 
