@@ -103,4 +103,7 @@ helm install test --dry-run --set nginx.replicaCount=10 helm
 ```
 
 ## Kustomize
+https://kustomize.io/
+
+<img src="https://github.com/cly1213/K8s_labs/blob/main/image/kustomize.png"/>
 
