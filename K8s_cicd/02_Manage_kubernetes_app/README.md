@@ -107,3 +107,14 @@ https://kustomize.io/
 
 <img src="https://github.com/cly1213/K8s_labs/blob/main/image/kustomize.png"/>
 
+Base -> Patch
+
+```
+kubectl -k(1.14 later)
+kubectl get -k
+kubectl diff -k
+kubectl apply -k
+kubectl kustomize
+```
+
+Ref:
