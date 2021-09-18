@@ -117,4 +117,22 @@ kubectl apply -k
 kubectl kustomize
 ```
 
+# Summary
+How to Choose?
+
+Kubectl/Helm/Kustomize
+
+## CI
+helm upgrade/ kubectl apply -k ==> API server
+
+helm upgrade + template + git ==> API server
+
+
 Ref:
+
+https://jsonnet.org/
+
+https://github.com/kapicorp/kapitan
+
+https://blog.argoproj.io/the-state-of-kubernetes-configuration-management-d8b06c1205
+
