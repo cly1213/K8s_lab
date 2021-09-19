@@ -1,0 +1,18 @@
+apiVersion: skaffold/v2beta2
+kind: Config
+metadata:
+  name: application
+build:
+  artifacts:
+  - image: hwchiu/cicd-app
+deploy:
+  helm:
+    releases:
+    - name: cicd
+      chartPath: helm
+      values:
+        nginx.image: hwchiu/cicd-app
+      imageStrategy:
+        helm: {}
+      setValues:
+        nginx.pullPolicy: IfNotPresent

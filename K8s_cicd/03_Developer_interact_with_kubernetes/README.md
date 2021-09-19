@@ -14,7 +14,7 @@ sudo netstat -anlpt | grep 2375
 ```
 
 ```
-#-H 's variable or DOCKER_HOST
+# -H parameter or DOCKER_HOST
 docker -H=172.17.8.111:2375 info
 DOCKER_HOST=172.17.8.111:2375 docker info
 ```
@@ -49,3 +49,21 @@ helm upgrade --set nginx.image.tag=1234567 --set nginx.pullPolicy=IfNotPresent c
 https://skaffold.dev/docs/design/
 
 <img src="https://github.com/cly1213/K8s_labs/blob/main/image/skaffold_architecture.png"/>
+
+Install Skaffold
+```
+curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64
+chmod +x skaffold
+sudo mv skaffold /usr/local/bin
+```
+
+```
+sudo skaffold init
+sudo skaffold build
+sudo skaffold run
+sudo skaffold dev --force=false
+```
+
+## Summary
+Developer needs to know kubernetes?
+
