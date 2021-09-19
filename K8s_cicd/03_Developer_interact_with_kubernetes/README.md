@@ -29,6 +29,7 @@ helm upgrade cicd --set nginx.image.tag=xxxxx --set.nginx.pullPolicy=IfNotPresen
 
 ```
 sudo docker exec -it kind-worker docker
+
 sudo docker exec -it kind-worker crictl
 ```
 
@@ -43,3 +44,8 @@ sudo make VERSION=1234567 build-image
 sudo kind load docker-image hwchiu/cicd-app:1234567
 helm upgrade --set nginx.image.tag=1234567 --set nginx.pullPolicy=IfNotPresent cicd helm
 ```
+
+## Skaffold
+https://skaffold.dev/docs/design/
+
+<img src="https://github.com/cly1213/K8s_labs/blob/main/image/skaffold_kustomize.png"/>
