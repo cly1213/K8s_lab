@@ -60,5 +60,4 @@ Latest Commit Hash is ch1_2c3e248
 Latest Commit Log is ch1_update new password
 IP address list are ch1_10.244.1.2
 Datetime is Thu Sep 16 10:58:42 UTC 2021
-
 ```
