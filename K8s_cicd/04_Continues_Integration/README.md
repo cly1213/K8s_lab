@@ -13,10 +13,10 @@ hadolint(Dockerfile lint)
 ## CI Pipeline/Service
 
 - Self-Hosted
- - CI server
+  - CI server
 
 - SaaS
- - HA
+  - HA
 
 ## Github Action(SaaS)
 
