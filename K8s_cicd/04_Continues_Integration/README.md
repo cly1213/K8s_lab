@@ -129,3 +129,18 @@ docker container run --name jenkins-blueocean --rm --detach \
   --volume jenkins-docker-certs:/certs/client:ro \
   --publish 8080:8080 --publish 50000:50000 jenkinsci/blueocean
 ```
+
+Jenkins 安裝密碼
+
+```
+#透過 docker volume inspect 來觀察 jenkins-data 的實際位置
+docker volume inspect jenkins-data
+
+# 切換成 root 移動過去
+sudo su
+cd ..
+
+
+# 根據網頁提示，獲取初始密碼 secrets/initialAdminPassword
+cat secrets/initialAdminPassword
+```
