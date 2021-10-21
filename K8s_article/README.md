@@ -6,3 +6,7 @@ https://sruthakeerthi-k.medium.com/powerful-k8s-concepts-that-every-k8s-develope
 Ultimate Guide Of Pod Eviction On Kubernetes
 
 https://devtron-labs.medium.com/ultimate-guide-of-pod-eviction-on-kubernetes-243fa5d551d9
+
+New in Kubernetes v1.22: alpha support for using swap memory
+
+https://kubernetes.io/blog/2021/08/09/run-nodes-with-swap-alpha/?fbclid=IwAR3CsnIHsdbtA9902DWXrqVRqzFJSjdjsg9ea6Se8uTmd1oPCVEE-KqmSvk
