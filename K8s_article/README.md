@@ -10,3 +10,7 @@ https://devtron-labs.medium.com/ultimate-guide-of-pod-eviction-on-kubernetes-243
 New in Kubernetes v1.22: alpha support for using swap memory
 
 https://kubernetes.io/blog/2021/08/09/run-nodes-with-swap-alpha/?fbclid=IwAR3CsnIHsdbtA9902DWXrqVRqzFJSjdjsg9ea6Se8uTmd1oPCVEE-KqmSvk
+
+11 of the Best Open-Source Kubernetes Tools — 2021 Edition
+
+https://loft-sh.medium.com/11-of-the-best-open-source-kubernetes-tools-2021-edition-b4aa49487845
