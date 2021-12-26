@@ -14,3 +14,7 @@ https://kubernetes.io/blog/2021/08/09/run-nodes-with-swap-alpha/?fbclid=IwAR3Csn
 11 of the Best Open-Source Kubernetes Tools — 2021 Edition
 
 https://loft-sh.medium.com/11-of-the-best-open-source-kubernetes-tools-2021-edition-b4aa49487845
+
+5 DevOps tips to speed up your developer workflow
+
+https://github.blog/2021-11-30-5-devops-tips-to-speed-up-your-developer-workflow/#cloud-hosted-integrated-development-environments-ide
